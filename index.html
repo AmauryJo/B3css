@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobilier en Bois</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-card .card-body {
+            text-align: center;
+        }
+
+        .header-image {
+            position: relative;
+            background-image: url('assets/img/header.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .header-image::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(101, 54, 13, 0.5); /* Couleur #65360D avec une opacité de 50% */
+            z-index: 1;
+        }
+
+        .header-image * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .header-image h1 {
+            font-size: 3rem;
+        }
+
+        .header-image p {
+            font-size: 1.25rem;
+        }
+
+        .header-image button {
+            font-size: 1.25rem;
+        }
+
+        .category-buttons .btn {
+            margin: 5px;
+        }
+
+        .promo-section {
+            background-image: url('assets/img/imgFooter.png');
+            background-size: cover;
+            background-position: center;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .promo-section h2 {
+            margin-bottom: 20px;
+
+        }
+
+        .stars {
+            color: #FFD700; /* Couleur jaune */
+            margin-bottom: 10px;
+        }
+
+        .btn-panier {
+            background-color: #F9940A;
+            border-color: #F9940A;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-5">
+                        <a class="nav-link text-dark" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link text-dark" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link text-dark" href="#">Nos produits</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="header-image">
+        <h1>Améliorez la beauté de votre maison à<br> l'aide de nos mobiliers en bois</h1>
+        <p style="color: #B1B1B1">Découvrez nos différents<br> gammes de produits</p>
+        <button class="btn btn-light">Découvrir</button>
+    </div>
+
+    <section class="category-buttons text-center my-4">
+        <button class="btn btn-outline-primary border-0 mx-4">
+            <img src="assets/img/illuBtn1.png" alt="Chaise">
+            <p class="text-dark">Chaise</p>
+        </button>
+        <button class="btn btn-outline-primary border-0 mx-4">
+            <img src="assets/img/illuBtn2.png" alt="Table">
+            <p class="text-dark">Table</p>
+        </button>
+        <button class="btn btn-outline-primary border-0 mx-4">
+            <img src="assets/img/illuBtn3.png" alt="Étagère">
+            <p class="text-dark">Étagère</p>
+        </button>
+        <button class="btn btn-outline-primary border-0 mx-4">
+            <img src="assets/img/illuBtn4.png" alt="Canapé">
+            <p class="text-dark">Canapé</p>
+        </button>
+        <button class="btn btn-outline-primary border-0 mx-4">
+            <img src="assets/img/illuBtn5.png" alt="Lampe">
+            <p class="text-dark">Lampe</p>
+        </button>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <!-- Première ligne d'articles -->
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="assets/img/articles/article1.png" alt="Chaise">
+                    <div class="card-body">
+                        <h5 class="card-title">Chaise</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">12,500.00€</p>
+                        <button class="btn btn-panier">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="assets/img/articles/article2.png" alt="Chaise">
+                    <div class="card-body">
+                        <h5 class="card-title">Chaise</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">12,500.00€</p>
+                        <button class="btn btn-panier">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="assets/img/articles/article3.png" alt="Chaise">
+                    <div class="card-body">
+                        <h5 class="card-title">Chaise</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">12,500.00€</p>
+                        <button class="btn btn-panier">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="assets/img/articles/article4.png" alt="Chaise">
+                    <div class="card-body">
+                        <h5 class="card-title">Chaise</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">12,500.00€</p>
+                        <button class="btn btn-panier">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Deuxième ligne d'articles -->
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="assets/img/articles/article5.png" alt="Table">
+                    <div class="card-body">
+                        <h5 class="card-title">Table</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">15,000.00€</p>
+                        <button class="btn btn-panier">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="assets/img/articles/article6.png" alt="Étagère">
+                    <div class="card-body">
+                        <h5 class="card-title">Étagère</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">8,000.00€</p>
+                        <button class="btn btn-panier">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="assets/img/articles/article7.png" alt="Canapé">
+                    <div class="card-body">
+                        <h5 class="card-title">Canapé</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">20,000.00€</p>
+                        <button class="btn btn-panier">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="assets/img/articles/article8.png" alt="Lampe">
+                    <div class="card-body">
+                        <h5 class="card-title">Lampe</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">5,000.00€</p>
+                        <button class="btn btn-panier">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo-section d-flex align-items-center mb-5 mr-5 ml-5" style="text-align: left; border-radius: 10px;">
+        <div class="container">
+            <h2 class="text-white">Transformez votre maison<br> avec notre mobilier</h2>
+            <button class="btn btn-light">Contactez-nous</button>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
